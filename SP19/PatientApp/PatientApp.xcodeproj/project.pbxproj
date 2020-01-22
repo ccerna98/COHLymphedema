@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		25C0F0ACEFFF08ECAD72B3BF /* Pods_PatientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E61D6644D81CCB9E1A09A /* Pods_PatientApp.framework */; };
+		267296702382711600AADAFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2672966F2382711600AADAFC /* Assets.xcassets */; };
+		267296AC239DBB7100AADAFC /* LymphedemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */; };
+		267296B323A0BE4200AADAFC /* LymphedemaInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */; };
 		F801AAB1225EAAC600D8EE52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AAB0225EAAC600D8EE52 /* SettingsViewController.swift */; };
 		F801AAB42260505D00D8EE52 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AAB32260505D00D8EE52 /* PickerTableViewCell.swift */; };
 		F801AABD2260842F00D8EE52 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AABB2260842F00D8EE52 /* User+CoreDataClass.swift */; };
@@ -19,7 +22,6 @@
 		F801AACC22665AED00D8EE52 /* SessionStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AACB22665AED00D8EE52 /* SessionStatsViewController.swift */; };
 		F818717C222F3C630043DCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818717B222F3C630043DCBE /* AppDelegate.swift */; };
 		F8187183222F3C630043DCBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8187181222F3C630043DCBE /* Main.storyboard */; };
-		F8187185222F3C640043DCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8187184222F3C640043DCBE /* Assets.xcassets */; };
 		F8187188222F3C640043DCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8187186222F3C640043DCBE /* LaunchScreen.storyboard */; };
 		F8280C862249BEB70067E2F7 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8280C852249BEB70067E2F7 /* DataManagement.swift */; };
 		F8280C8B2249E9310067E2F7 /* ViewConstraintProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8280C8A2249E9310067E2F7 /* ViewConstraintProtocol.swift */; };
@@ -87,6 +89,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2672966F2382711600AADAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LymphedemaTableViewController.swift; sourceTree = "<group>"; };
+		267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LymphedemaInfoViewController.swift; path = "PatientApp/View Controllers/Lymphedema/LymphedemaInfoViewController.swift"; sourceTree = SOURCE_ROOT; };
 		41A2174645898D77A7D3B3A5 /* Pods-PatientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.release.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.release.xcconfig"; sourceTree = "<group>"; };
 		551E61D6644D81CCB9E1A09A /* Pods_PatientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE82AD43BB24DB702580C9D8 /* Pods-PatientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.debug.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +107,6 @@
 		F8187178222F3C630043DCBE /* PatientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F818717B222F3C630043DCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8187182222F3C630043DCBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F8187184222F3C640043DCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8187187222F3C640043DCBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8187189222F3C640043DCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8280C852249BEB70067E2F7 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
@@ -191,6 +195,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		267296AD239DC91800AADAFC /* Lymphedema */ = {
+			isa = PBXGroup;
+			children = (
+				267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */,
+				267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */,
+			);
+			path = Lymphedema;
+			sourceTree = "<group>";
+		};
 		27D6B97B41B8CBA4473B378E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 				F801AAC32263E3E100D8EE52 /* GlobalVariables.swift */,
 				F8471B422248928E00960B8C /* Resources */,
 				F8187189222F3C640043DCBE /* Info.plist */,
+				2672966F2382711600AADAFC /* Assets.xcassets */,
 				F829C99822370EE100D1E57B /* Data Processing */,
 				F8471B452248931900960B8C /* View Controllers */,
 				F8471B3D22488F1D00960B8C /* Core Data */,
@@ -354,7 +368,6 @@
 			children = (
 				F818717B222F3C630043DCBE /* AppDelegate.swift */,
 				F8187181222F3C630043DCBE /* Main.storyboard */,
-				F8187184222F3C640043DCBE /* Assets.xcassets */,
 				F8187186222F3C640043DCBE /* LaunchScreen.storyboard */,
 				F850383F22389B87009B79A0 /* PatientApp.entitlements */,
 			);
@@ -373,6 +386,7 @@
 		F8471B452248931900960B8C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				267296AD239DC91800AADAFC /* Lymphedema */,
 				F801AAB2225ED20800D8EE52 /* Settings */,
 				F86AB2032256F29500C4F95E /* Bluetooth */,
 				F86AB1BB2255AB9700C4F95E /* Core Data */,
@@ -558,8 +572,8 @@
 				F83702C922309FD800AC753C /* MontserratAlternates-ExtraLight.ttf in Resources */,
 				F8187188222F3C640043DCBE /* LaunchScreen.storyboard in Resources */,
 				F83702C822309FD800AC753C /* Montserrat-ExtraLight.ttf in Resources */,
-				F8187185222F3C640043DCBE /* Assets.xcassets in Resources */,
 				F83702C622309FD800AC753C /* Montserrat-Regular.ttf in Resources */,
+				267296702382711600AADAFC /* Assets.xcassets in Resources */,
 				F8187183222F3C630043DCBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,8 +697,10 @@
 				F850383E22388699009B79A0 /* ProgressTableViewCell.swift in Sources */,
 				F83702B2222F4EAC00AC753C /* GoalsViewController.swift in Sources */,
 				F829C99422362B5500D1E57B /* WellnessTableViewCell.swift in Sources */,
+				267296B323A0BE4200AADAFC /* LymphedemaInfoViewController.swift in Sources */,
 				F86AB1EF2255F8C200C4F95E /* MetaDataManagement.swift in Sources */,
 				F86AB1D42255EF5800C4F95E /* Question+CoreDataClass.swift in Sources */,
+				267296AC239DBB7100AADAFC /* LymphedemaTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

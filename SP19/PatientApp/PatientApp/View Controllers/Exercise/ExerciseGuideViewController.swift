@@ -402,7 +402,7 @@ extension ExerciseGuideViewController: ViewConstraintProtocol {
         self.view.addSubview(startButton)
         
         // setup graph
-        activeGraph.updateSweepGraph(color: colorTheme, start: degToRad(deg: 0), max: degToRad(deg: 90), left: true, value: degToRad(deg: 60), reps: exercise.baselineRep)
+        activeGraph.updateSweepGraph(color: colorTheme, start: degToRad(deg: 0), max: degToRad(deg: 90), left: true, value: degToRad(deg: 60), reps: Int(exercise.baselineRep))
         self.view.addSubview(activeGraph)
         
         countLabel.setLabelParams(color: .black, string: "", ftype: defFont, fsize: 14, align: .left)

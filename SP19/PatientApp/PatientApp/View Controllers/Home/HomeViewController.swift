@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     var exerciseNames = [String]()
     
     // private variables
-    private let colorTheme = UIColor(named: "blue")!
+    private let colorTheme = UIColor(named: "blue")
     private let settingsButton = UIButton()
 
     // subviews
@@ -57,14 +57,14 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         
         reloadUser()
-        headerView.updateHeader(text: "Hello, \(user.name)", color: colorTheme, fsize: 30)
+        headerView.updateHeader(text: "Hello, \(user.name)", color: colorTheme!, fsize: 30)
         
         onVC = true
         centralManager.scanForPeripherals(withServices: [serviceUUID])
         
         reloadLocalVariables()
         goalView.updateGoals(goalList: goalString)
-        circleGraph.updateProgressGraph(color: colorTheme, exNum: exerciseValues.count, exVal: exerciseValues, exName: exerciseNames)
+        circleGraph.updateProgressGraph(color: colorTheme!, exNum: exerciseValues.count, exVal: exerciseValues, exName: exerciseNames)
         
         if devMode {
             devButtonSetup()
@@ -212,7 +212,7 @@ extension HomeViewController: ViewConstraintProtocol {
     internal func setupViews() {
         // update all of the views
         reloadUser()
-        headerView.updateHeader(text: "Hello, \(user.name)", color: colorTheme, fsize: 30)
+        headerView.updateHeader(text: "Hello, \(user.name)", color: colorTheme!, fsize: 30)
         BTView.updateBTStatus(connStat: false, deviceString: "N/A")
         
         // add the subviews to the main view
