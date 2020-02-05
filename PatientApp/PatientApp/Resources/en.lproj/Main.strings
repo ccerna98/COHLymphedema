@@ -1,0 +1,24 @@
+
+/* Class = "UIViewController"; title = "Lymphedema"; ObjectID = "BEW-Dp-ntG"; */
+"BEW-Dp-ntG.title" = "Lymphedema";
+
+/* Class = "UITabBarItem"; title = "Progress"; ObjectID = "FoV-rm-s9I"; */
+"FoV-rm-s9I.title" = "Progress";
+
+/* Class = "UITabBarItem"; title = "Lymphedema"; ObjectID = "RUN-0e-dwk"; */
+"RUN-0e-dwk.title" = "Lymphedema";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "TMq-nu-avb"; */
+"TMq-nu-avb.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Goals"; ObjectID = "Yzm-N1-nbh"; */
+"Yzm-N1-nbh.title" = "Goals";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Home";
+
+/* Class = "UITabBarItem"; title = "Wellness"; ObjectID = "bJS-ld-GkP"; */
+"bJS-ld-GkP.title" = "Wellness";
+
+/* Class = "UITabBarItem"; title = "Exercise"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Exercise";
