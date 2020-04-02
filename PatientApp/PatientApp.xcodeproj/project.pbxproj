@@ -11,6 +11,7 @@
 		267296702382711600AADAFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2672966F2382711600AADAFC /* Assets.xcassets */; };
 		267296AC239DBB7100AADAFC /* LymphedemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */; };
 		267296B323A0BE4200AADAFC /* LymphedemaInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */; };
+		268317F0240E310100059C81 /* LymphedemaMassagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268317EF240E310100059C81 /* LymphedemaMassagesViewController.swift */; };
 		F801AAB1225EAAC600D8EE52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AAB0225EAAC600D8EE52 /* SettingsViewController.swift */; };
 		F801AAB42260505D00D8EE52 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AAB32260505D00D8EE52 /* PickerTableViewCell.swift */; };
 		F801AABD2260842F00D8EE52 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F801AABB2260842F00D8EE52 /* User+CoreDataClass.swift */; };
@@ -92,6 +93,7 @@
 		2672966F2382711600AADAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LymphedemaTableViewController.swift; sourceTree = "<group>"; };
 		267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LymphedemaInfoViewController.swift; path = "PatientApp/View Controllers/Lymphedema/LymphedemaInfoViewController.swift"; sourceTree = SOURCE_ROOT; };
+		268317EF240E310100059C81 /* LymphedemaMassagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LymphedemaMassagesViewController.swift; sourceTree = "<group>"; };
 		41A2174645898D77A7D3B3A5 /* Pods-PatientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.release.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.release.xcconfig"; sourceTree = "<group>"; };
 		551E61D6644D81CCB9E1A09A /* Pods_PatientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE82AD43BB24DB702580C9D8 /* Pods-PatientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.debug.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */,
 				267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */,
+				268317EF240E310100059C81 /* LymphedemaMassagesViewController.swift */,
 			);
 			path = Lymphedema;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				F83702B7222F4ED000AC753C /* Header.swift in Sources */,
 				F8EC34F72237B2A30054B30D /* BTViewController.swift in Sources */,
 				F86AB1C12255D1F200C4F95E /* ClosedRange+Extensions.swift in Sources */,
+				268317F0240E310100059C81 /* LymphedemaMassagesViewController.swift in Sources */,
 				F801AACA2264086A00D8EE52 /* MetricView.swift in Sources */,
 				F86AB2002256087500C4F95E /* UserDataManagement.swift in Sources */,
 				F8280CAC224E117F0067E2F7 /* String+Extensions.swift in Sources */,
