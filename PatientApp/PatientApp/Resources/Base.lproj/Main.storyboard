@@ -209,7 +209,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="aHt-Tf-9OK" kind="show" id="jNA-c6-KKu"/>
+                                            <segue destination="aHt-Tf-9OK" kind="show" id="zZC-f9-5kD"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LabelCell" textLabel="Uqp-gX-trm" style="IBUITableViewCellStyleDefault" id="IiE-r3-MmH" customClass="LymphedemaTableViewCell" customModule="PatientApp" customModuleProvider="target">
@@ -249,7 +249,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HhG-tp-9nT" kind="show" id="xpF-jW-Szw"/>
+                                            <segue destination="Dh7-aq-2Yb" kind="show" id="d1n-cx-9Eo"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LabelCell" textLabel="2k2-Gp-J8e" style="IBUITableViewCellStyleDefault" id="6eD-qU-nLH" customClass="LymphedemaTableViewCell" customModule="PatientApp" customModuleProvider="target">
@@ -301,30 +301,43 @@
             </objects>
             <point key="canvasLocation" x="7652.1739130434789" y="653.57142857142856"/>
         </scene>
-        <!--Massage Tutorials-->
-        <scene sceneID="baK-sQ-ODQ">
+        <!--Massage Tutorials View Controller-->
+        <scene sceneID="Anp-3F-wRk">
             <objects>
-                <viewController title="Massage Tutorials" id="HhG-tp-9nT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F0u-se-4Nv">
+                <viewController id="Dh7-aq-2Yb" customClass="MassageTutorialsViewController" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ems-t7-CKc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AbL-dY-J44">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Massage Tutorials" id="aQb-UB-qnE"/>
-                                </items>
-                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8n-bF-yNH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-4K-i5W">
+                                        <rect key="frame" x="129" y="218" width="87" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Watch Video"/>
+                                        <connections>
+                                            <action selector="watchVideo1:" destination="Dh7-aq-2Yb" eventType="touchUpInside" id="4js-SG-dzN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="krg-EC-UyZ"/>
+                        <constraints>
+                            <constraint firstItem="Y8n-bF-yNH" firstAttribute="leading" secondItem="Gu6-B1-tE1" secondAttribute="leading" id="3BD-sX-uQF"/>
+                            <constraint firstItem="Gu6-B1-tE1" firstAttribute="trailing" secondItem="Y8n-bF-yNH" secondAttribute="trailing" id="aDS-i2-mzz"/>
+                            <constraint firstItem="Y8n-bF-yNH" firstAttribute="top" secondItem="Gu6-B1-tE1" secondAttribute="top" id="foD-At-c7v"/>
+                            <constraint firstItem="Gu6-B1-tE1" firstAttribute="bottom" secondItem="Y8n-bF-yNH" secondAttribute="bottom" id="knQ-Xp-BEF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gu6-B1-tE1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g2c-l3-18D"/>
+                    <navigationItem key="navigationItem" id="dMG-uq-CPO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="12X-uU-Vqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cE-ow-1i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7719" y="1442"/>
+            <point key="canvasLocation" x="7998.5507246376819" y="1386.8303571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="61g-sQ-krm">
@@ -345,7 +358,7 @@
         <!--What is Lympedema-->
         <scene sceneID="ue0-Xg-XnV">
             <objects>
-                <viewController title="What is Lympedema" id="aHt-Tf-9OK" sceneMemberID="viewController">
+                <viewController title="What is Lympedema" id="aHt-Tf-9OK" customClass="LymphedemaInfoViewController" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XrK-QN-yBM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="3100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
