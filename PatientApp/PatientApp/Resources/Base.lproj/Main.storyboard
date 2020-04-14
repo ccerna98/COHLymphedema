@@ -304,42 +304,58 @@
         <!--Massage Tutorials View Controller-->
         <scene sceneID="Anp-3F-wRk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cE-ow-1i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Dh7-aq-2Yb" customClass="MassageTutorialsViewController" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-t7-CKc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8n-bF-yNH">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-S1-ND5">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-5r-UHD">
-                                        <rect key="frame" x="87" y="78" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
-                                    <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-np-0xU">
-                                        <rect key="frame" x="87" y="339" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgE-lL-BVx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-np-0xU">
+                                                <rect key="frame" x="87" y="82" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-5r-UHD">
+                                                <rect key="frame" x="87" y="375" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
+                                <constraints>
+                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="top" secondItem="F2H-S1-ND5" secondAttribute="top" id="Ew4-al-cX3"/>
+                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="leading" secondItem="F2H-S1-ND5" secondAttribute="leading" id="OSY-Zo-63b"/>
+                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="centerX" secondItem="F2H-S1-ND5" secondAttribute="centerX" id="Wqq-PR-tdY"/>
+                                    <constraint firstAttribute="bottom" secondItem="NgE-lL-BVx" secondAttribute="bottom" id="gWq-vW-T3n"/>
+                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="bottom" secondItem="d3g-Fz-5rv" secondAttribute="bottom" id="wca-bL-cZG"/>
+                                    <constraint firstAttribute="trailing" secondItem="NgE-lL-BVx" secondAttribute="trailing" id="yMA-aj-bYb"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rWd-sV-sB3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="d3g-Fz-5rv"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Y8n-bF-yNH" firstAttribute="leading" secondItem="Gu6-B1-tE1" secondAttribute="leading" id="3BD-sX-uQF"/>
-                            <constraint firstItem="Gu6-B1-tE1" firstAttribute="trailing" secondItem="Y8n-bF-yNH" secondAttribute="trailing" id="aDS-i2-mzz"/>
-                            <constraint firstItem="Y8n-bF-yNH" firstAttribute="top" secondItem="Gu6-B1-tE1" secondAttribute="top" id="foD-At-c7v"/>
-                            <constraint firstItem="Gu6-B1-tE1" firstAttribute="bottom" secondItem="Y8n-bF-yNH" secondAttribute="bottom" id="knQ-Xp-BEF"/>
+                            <constraint firstItem="Gu6-B1-tE1" firstAttribute="bottom" secondItem="F2H-S1-ND5" secondAttribute="bottom" id="C3I-hW-ew2"/>
+                            <constraint firstItem="F2H-S1-ND5" firstAttribute="top" secondItem="Gu6-B1-tE1" secondAttribute="top" id="Dsc-qF-pK5"/>
+                            <constraint firstItem="F2H-S1-ND5" firstAttribute="trailing" secondItem="Gu6-B1-tE1" secondAttribute="trailing" id="NMz-6y-Iqe"/>
+                            <constraint firstItem="F2H-S1-ND5" firstAttribute="leading" secondItem="Gu6-B1-tE1" secondAttribute="leading" id="gLy-it-Zyy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gu6-B1-tE1"/>
                     </view>
@@ -349,9 +365,8 @@
                         <outlet property="MLDLegVideo" destination="Bas-np-0xU" id="jTk-TE-cDs"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5cE-ow-1i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7998.5507246376819" y="1386.8303571428571"/>
+            <point key="canvasLocation" x="8343" y="1840"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="61g-sQ-krm">
