@@ -9,35 +9,27 @@
 
 import UIKit
 import AVKit
+import WebKit
 
 class MassageTutorialsViewController: UIViewController {
 
-    @IBAction func watchVideo1(_ sender: Any) {
-        if let path = Bundle.main.path(forResource: "video", ofType: "mov"){
-            let video = AVPlayer(url: URL(fileURLWithPath: path))
-            let videoPlayer = AVPlayerViewController()
-            videoPlayer.player = video
-            
-            present(videoPlayer, animated: true, completion: {
-                video.play()
-            })
-        }
-    }
-    override func viewDidLoad() {
+    @IBOutlet weak var MLDArmVideo: WKWebView!
+    @IBOutlet weak var MLDLegVideo: WKWebView!
+    
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getVideo(videoTag: MLDArmVideo, videoCode: "KsJUbY0c324")
+        getVideo(videoTag: MLDLegVideo, videoCode: "87NdIiSnOjA")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning(){
+        super.didReceiveMemoryWarning()
     }
-    */
+    
+    func getVideo(videoTag: WKWebView, videoCode: String){
+        let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+        videoTag.load(URLRequest(url: url!))
+    }
 
 }
