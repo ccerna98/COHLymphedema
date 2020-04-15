@@ -304,31 +304,50 @@
         <!--Massage Tutorials View Controller-->
         <scene sceneID="Anp-3F-wRk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5cE-ow-1i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Dh7-aq-2Yb" customClass="MassageTutorialsViewController" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-t7-CKc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-S1-ND5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1329"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgE-lL-BVx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1329"/>
                                         <subviews>
-                                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-np-0xU">
-                                                <rect key="frame" x="87" y="82" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Massage Tutorials" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTx-r8-TFX">
+                                                <rect key="frame" x="103.5" y="25" width="207" height="35"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                                <color key="textColor" red="1" green="0.50837004679999998" blue="0.80123944709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-np-0xU">
+                                                <rect key="frame" x="8" y="802" width="398" height="235"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="235" id="47B-DF-c4N"/>
+                                                </constraints>
                                                 <wkWebViewConfiguration key="configuration">
                                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                                     <wkPreferences key="preferences"/>
                                                 </wkWebViewConfiguration>
                                             </wkWebView>
-                                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-5r-UHD">
-                                                <rect key="frame" x="87" y="375" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKV-uX-hy4">
+                                                <rect key="frame" x="25" y="83" width="364" height="294"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="294" id="nMB-KW-bWo"/>
+                                                </constraints>
+                                                <string key="text">Your lymphatic system helps eliminate your body’s waste. A healthy, active lymphatic system uses the natural movements of smooth muscle tissue to do this. If you’ve ever had a surgery on or involving your lymph nodes, your doctor may have suggested lymphatic drainage massage. Below are a few video tutorials providing instructrion on how to do manual lymphatic drainage in the arms and legs.</string>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-5r-UHD">
+                                                <rect key="frame" x="8" y="411" width="398" height="235"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="235" id="7GA-RU-4yr"/>
+                                                </constraints>
                                                 <wkWebViewConfiguration key="configuration">
                                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                                     <wkPreferences key="preferences"/>
@@ -336,14 +355,27 @@
                                             </wkWebView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Bas-np-0xU" firstAttribute="leading" secondItem="NgE-lL-BVx" secondAttribute="leadingMargin" id="3DB-JT-Dpi"/>
+                                            <constraint firstItem="Bas-np-0xU" firstAttribute="top" secondItem="1tG-5r-UHD" secondAttribute="bottom" constant="156" id="BJs-mM-Lmz"/>
+                                            <constraint firstItem="Bas-np-0xU" firstAttribute="leading" secondItem="1tG-5r-UHD" secondAttribute="leading" id="ZAa-nU-5Cz"/>
+                                            <constraint firstItem="FKV-uX-hy4" firstAttribute="top" secondItem="YTx-r8-TFX" secondAttribute="bottom" constant="23" id="ZRH-Lb-chg"/>
+                                            <constraint firstItem="Bas-np-0xU" firstAttribute="centerX" secondItem="YTx-r8-TFX" secondAttribute="centerX" id="bfS-dN-p8I"/>
+                                            <constraint firstAttribute="trailing" secondItem="FKV-uX-hy4" secondAttribute="trailing" constant="25" id="i75-75-RGC"/>
+                                            <constraint firstItem="YTx-r8-TFX" firstAttribute="top" secondItem="NgE-lL-BVx" secondAttribute="top" constant="25" id="kMJ-eq-OeL"/>
+                                            <constraint firstItem="1tG-5r-UHD" firstAttribute="top" secondItem="FKV-uX-hy4" secondAttribute="bottom" constant="34" id="nWA-PN-qJK"/>
+                                            <constraint firstItem="Bas-np-0xU" firstAttribute="trailing" secondItem="1tG-5r-UHD" secondAttribute="trailing" id="pQw-aX-hvD"/>
+                                            <constraint firstItem="YTx-r8-TFX" firstAttribute="centerX" secondItem="NgE-lL-BVx" secondAttribute="centerX" id="qWU-kZ-qcF"/>
+                                            <constraint firstItem="FKV-uX-hy4" firstAttribute="leading" secondItem="NgE-lL-BVx" secondAttribute="leading" constant="25" id="u3C-OZ-LdE"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="NgE-lL-BVx" firstAttribute="top" secondItem="F2H-S1-ND5" secondAttribute="top" id="Ew4-al-cX3"/>
                                     <constraint firstItem="NgE-lL-BVx" firstAttribute="leading" secondItem="F2H-S1-ND5" secondAttribute="leading" id="OSY-Zo-63b"/>
-                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="centerX" secondItem="F2H-S1-ND5" secondAttribute="centerX" id="Wqq-PR-tdY"/>
+                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="height" secondItem="F2H-S1-ND5" secondAttribute="height" priority="250" id="R0V-ul-ILD"/>
                                     <constraint firstAttribute="bottom" secondItem="NgE-lL-BVx" secondAttribute="bottom" id="gWq-vW-T3n"/>
-                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="bottom" secondItem="d3g-Fz-5rv" secondAttribute="bottom" id="wca-bL-cZG"/>
+                                    <constraint firstItem="NgE-lL-BVx" firstAttribute="width" secondItem="F2H-S1-ND5" secondAttribute="width" id="swa-fd-WRR"/>
                                     <constraint firstAttribute="trailing" secondItem="NgE-lL-BVx" secondAttribute="trailing" id="yMA-aj-bYb"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="rWd-sV-sB3"/>
@@ -360,13 +392,15 @@
                         <viewLayoutGuide key="safeArea" id="Gu6-B1-tE1"/>
                     </view>
                     <navigationItem key="navigationItem" id="dMG-uq-CPO"/>
+                    <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="MLDArmVideo" destination="1tG-5r-UHD" id="1vJ-cK-S1H"/>
                         <outlet property="MLDLegVideo" destination="Bas-np-0xU" id="jTk-TE-cDs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cE-ow-1i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8343" y="1840"/>
+            <point key="canvasLocation" x="8342.0289855072479" y="1839.5089285714284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="61g-sQ-krm">
@@ -393,7 +427,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-ow-Sr0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="2929"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="3000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Id-GW-a2H">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
@@ -941,7 +975,7 @@ lymphnet.org</string>
                                     <constraint firstItem="4Id-GW-a2H" firstAttribute="top" secondItem="JIK-ow-Sr0" secondAttribute="top" id="Ggq-ok-cVE"/>
                                     <constraint firstAttribute="trailing" secondItem="4Id-GW-a2H" secondAttribute="trailing" id="fJA-vQ-8l8"/>
                                     <constraint firstItem="4Id-GW-a2H" firstAttribute="width" secondItem="JIK-ow-Sr0" secondAttribute="width" multiplier="0.57971" constant="174" id="g86-fn-Uvw"/>
-                                    <constraint firstAttribute="bottom" secondItem="4Id-GW-a2H" secondAttribute="bottom" constant="-71" id="uBR-b2-iBh"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Id-GW-a2H" secondAttribute="bottom" id="uBR-b2-iBh"/>
                                     <constraint firstItem="4Id-GW-a2H" firstAttribute="leading" secondItem="JIK-ow-Sr0" secondAttribute="leading" id="xEo-g8-MZJ"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="r4Q-tg-3yU"/>
@@ -952,7 +986,7 @@ lymphnet.org</string>
                         <constraints>
                             <constraint firstItem="JIK-ow-Sr0" firstAttribute="top" secondItem="fH9-3K-opv" secondAttribute="top" id="4ok-Xd-ng6"/>
                             <constraint firstItem="fH9-3K-opv" firstAttribute="trailing" secondItem="JIK-ow-Sr0" secondAttribute="trailing" id="IMt-Kh-ZnX"/>
-                            <constraint firstItem="fH9-3K-opv" firstAttribute="bottom" secondItem="JIK-ow-Sr0" secondAttribute="bottom" id="RQV-O9-85d"/>
+                            <constraint firstItem="fH9-3K-opv" firstAttribute="bottom" secondItem="JIK-ow-Sr0" secondAttribute="bottom" constant="-71" id="RQV-O9-85d"/>
                             <constraint firstItem="JIK-ow-Sr0" firstAttribute="leading" secondItem="fH9-3K-opv" secondAttribute="leading" id="eDc-Xr-LQE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fH9-3K-opv"/>
