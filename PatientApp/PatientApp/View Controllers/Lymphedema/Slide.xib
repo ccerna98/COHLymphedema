@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="PatientApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoHLogo.jpeg" id="eSZ-J5-g1p">
+                    <rect key="frame" x="0.0" y="244" width="414" height="246"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUZ-y0-AX5">
+                    <rect key="frame" x="25" y="244" width="364" height="246"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="246" id="Gor-uh-hHf"/>
+                    </constraints>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-0E-Rwy">
+                    <rect key="frame" x="25" y="590" width="364" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCK-cm-6K1">
+                    <rect key="frame" x="35" y="651" width="344" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LCK-cm-6K1" firstAttribute="leading" secondItem="dUZ-y0-AX5" secondAttribute="leading" constant="10" id="1Cz-iQ-RcK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="25" id="2uf-PD-Ob3"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="bottom" constant="100" id="Cmo-4F-Ni9"/>
+                <constraint firstItem="dUZ-y0-AX5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="200" id="Hcq-Kx-r4N"/>
+                <constraint firstItem="LCK-cm-6K1" firstAttribute="top" secondItem="JY4-0E-Rwy" secondAttribute="bottom" constant="25" id="Q5c-BN-mF8"/>
+                <constraint firstItem="dUZ-y0-AX5" firstAttribute="centerX" secondItem="LCK-cm-6K1" secondAttribute="centerX" id="bwy-9l-VPx"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" id="dQP-HI-gMm"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="leading" secondItem="dUZ-y0-AX5" secondAttribute="leading" id="g4I-du-WBy"/>
+                <constraint firstItem="dUZ-y0-AX5" firstAttribute="centerX" secondItem="JY4-0E-Rwy" secondAttribute="centerX" id="gBh-8K-00O"/>
+                <constraint firstItem="eSZ-J5-g1p" firstAttribute="bottom" secondItem="dUZ-y0-AX5" secondAttribute="bottom" id="gYz-in-DsT"/>
+                <constraint firstItem="dUZ-y0-AX5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="gdg-JZ-yBq"/>
+                <constraint firstItem="LCK-cm-6K1" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="-10" id="s4g-Yy-eIl"/>
+                <constraint firstItem="eSZ-J5-g1p" firstAttribute="centerX" secondItem="dUZ-y0-AX5" secondAttribute="centerX" id="vpn-Et-cNb"/>
+                <constraint firstItem="eSZ-J5-g1p" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="top" id="zc0-aw-Ven"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="labelDesc" destination="LCK-cm-6K1" id="qFs-24-xCr"/>
+                <outlet property="labelTitle" destination="JY4-0E-Rwy" id="hXP-hM-BzK"/>
+                <outlet property="webView" destination="dUZ-y0-AX5" id="JHW-D5-AGO"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CoHLogo.jpeg" width="1944" height="1069.199951171875"/>
+    </resources>
+</document>
