@@ -14,12 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoHLogo.jpeg" id="eSZ-J5-g1p">
-                    <rect key="frame" x="0.0" y="244" width="414" height="246"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUZ-y0-AX5">
-                    <rect key="frame" x="25" y="244" width="364" height="246"/>
+                    <rect key="frame" x="20" y="169" width="374" height="246"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="246" id="Gor-uh-hHf"/>
@@ -29,35 +25,30 @@
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-0E-Rwy">
-                    <rect key="frame" x="25" y="590" width="364" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-0E-Rwy">
+                    <rect key="frame" x="25" y="450" width="364" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="0.83575534326424872" green="0.43291211121906359" blue="0.63387389404954508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCK-cm-6K1">
-                    <rect key="frame" x="35" y="651" width="344" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCK-cm-6K1">
+                    <rect key="frame" x="35" y="496.5" width="354" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.65999433285803111" green="0.34186983347810795" blue="0.50056895381053768" alpha="0.80014854753521125" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.99675916495051209" green="0.94339068411392935" blue="1" alpha="0.593474911971831" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="LCK-cm-6K1" firstAttribute="leading" secondItem="dUZ-y0-AX5" secondAttribute="leading" constant="10" id="1Cz-iQ-RcK"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="25" id="2uf-PD-Ob3"/>
-                <constraint firstItem="JY4-0E-Rwy" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="bottom" constant="100" id="Cmo-4F-Ni9"/>
-                <constraint firstItem="dUZ-y0-AX5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="200" id="Hcq-Kx-r4N"/>
-                <constraint firstItem="LCK-cm-6K1" firstAttribute="top" secondItem="JY4-0E-Rwy" secondAttribute="bottom" constant="25" id="Q5c-BN-mF8"/>
-                <constraint firstItem="dUZ-y0-AX5" firstAttribute="centerX" secondItem="LCK-cm-6K1" secondAttribute="centerX" id="bwy-9l-VPx"/>
-                <constraint firstItem="JY4-0E-Rwy" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" id="dQP-HI-gMm"/>
-                <constraint firstItem="JY4-0E-Rwy" firstAttribute="leading" secondItem="dUZ-y0-AX5" secondAttribute="leading" id="g4I-du-WBy"/>
-                <constraint firstItem="dUZ-y0-AX5" firstAttribute="centerX" secondItem="JY4-0E-Rwy" secondAttribute="centerX" id="gBh-8K-00O"/>
-                <constraint firstItem="eSZ-J5-g1p" firstAttribute="bottom" secondItem="dUZ-y0-AX5" secondAttribute="bottom" id="gYz-in-DsT"/>
-                <constraint firstItem="dUZ-y0-AX5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="gdg-JZ-yBq"/>
-                <constraint firstItem="LCK-cm-6K1" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="-10" id="s4g-Yy-eIl"/>
-                <constraint firstItem="eSZ-J5-g1p" firstAttribute="centerX" secondItem="dUZ-y0-AX5" secondAttribute="centerX" id="vpn-Et-cNb"/>
-                <constraint firstItem="eSZ-J5-g1p" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="top" id="zc0-aw-Ven"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="20" id="2uf-PD-Ob3"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="bottom" constant="35" id="Cmo-4F-Ni9"/>
+                <constraint firstItem="dUZ-y0-AX5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="125" id="Hcq-Kx-r4N"/>
+                <constraint firstItem="LCK-cm-6K1" firstAttribute="trailing" secondItem="JY4-0E-Rwy" secondAttribute="trailing" id="It8-dN-sgh"/>
+                <constraint firstItem="LCK-cm-6K1" firstAttribute="top" secondItem="JY4-0E-Rwy" secondAttribute="bottom" constant="15" id="Q5c-BN-mF8"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="-5" id="dQP-HI-gMm"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="leading" secondItem="dUZ-y0-AX5" secondAttribute="leading" constant="5" id="g4I-du-WBy"/>
+                <constraint firstItem="dUZ-y0-AX5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gdg-JZ-yBq"/>
+                <constraint firstItem="LCK-cm-6K1" firstAttribute="leading" secondItem="JY4-0E-Rwy" secondAttribute="leading" constant="10" id="pJk-lW-diT"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
@@ -68,7 +59,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </view>
     </objects>
-    <resources>
-        <image name="CoHLogo.jpeg" width="1944" height="1069.199951171875"/>
-    </resources>
 </document>

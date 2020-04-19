@@ -430,9 +430,14 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-zU-R2I">
                                 <rect key="frame" x="187.5" y="751" width="39" height="37"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-c0-oHx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Massage Tutorials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyw-I3-bUL">
+                                <rect key="frame" x="44" y="128" width="326" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.52028170650000005" blue="0.76249363979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-c0-oHx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="h5n-Sl-GlD"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ZdF-MN-Zph"/>
                             </scrollView>
@@ -440,8 +445,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" name="lightSkyBlue"/>
                         <constraints>
+                            <constraint firstItem="oyw-I3-bUL" firstAttribute="centerX" secondItem="SLi-0H-9EF" secondAttribute="centerX" id="2EE-cp-arN"/>
+                            <constraint firstItem="oyw-I3-bUL" firstAttribute="top" secondItem="SLi-0H-9EF" secondAttribute="top" constant="40" id="CWe-hT-6Da"/>
+                            <constraint firstItem="zfI-c0-oHx" firstAttribute="top" secondItem="SLi-0H-9EF" secondAttribute="top" id="IUh-si-Arq"/>
+                            <constraint firstItem="SLi-0H-9EF" firstAttribute="bottom" secondItem="zfI-c0-oHx" secondAttribute="bottom" id="QME-4T-uOB"/>
+                            <constraint firstItem="zfI-c0-oHx" firstAttribute="centerX" secondItem="SLi-0H-9EF" secondAttribute="centerX" id="aM3-C1-3BL"/>
                             <constraint firstItem="SLi-0H-9EF" firstAttribute="bottom" secondItem="aC3-zU-R2I" secondAttribute="bottom" constant="25" id="gSx-1b-Ccb"/>
+                            <constraint firstItem="SLi-0H-9EF" firstAttribute="trailing" secondItem="zfI-c0-oHx" secondAttribute="trailing" id="h8b-Ds-crs"/>
                             <constraint firstItem="aC3-zU-R2I" firstAttribute="centerX" secondItem="SLi-0H-9EF" secondAttribute="centerX" id="iot-Vz-gN2"/>
+                            <constraint firstItem="zfI-c0-oHx" firstAttribute="leading" secondItem="SLi-0H-9EF" secondAttribute="leading" id="u3m-pY-1dS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SLi-0H-9EF"/>
                     </view>
@@ -449,6 +461,7 @@
                     <connections>
                         <outlet property="pageControl" destination="aC3-zU-R2I" id="c2i-8s-SrU"/>
                         <outlet property="scrollView" destination="zfI-c0-oHx" id="cp2-wl-XRn"/>
+                        <outlet property="titleLabel" destination="oyw-I3-bUL" id="qKa-3R-q2e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAe-08-YFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

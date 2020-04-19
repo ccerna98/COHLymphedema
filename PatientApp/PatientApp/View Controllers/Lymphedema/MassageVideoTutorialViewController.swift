@@ -16,19 +16,28 @@ class MassageVideoTutorialViewController: UIViewController, UIScrollViewDelegate
             scrollView.delegate = self
         }
     }
+        
     
     @IBOutlet weak var pageControl: UIPageControl!
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
             var slides:[Slide] = [];
             
             override func viewDidLoad() {
                 super.viewDidLoad()
+                
+             
+                
                 slides = createSlides()
                 setupSlideScrollView(slides: slides)
                 
                 pageControl.numberOfPages = slides.count
                 pageControl.currentPage = 0
                 view.bringSubviewToFront(pageControl)
+                
+                view.bringSubviewToFront(titleLabel)
             }
 
             override func didReceiveMemoryWarning() {
@@ -41,13 +50,13 @@ class MassageVideoTutorialViewController: UIViewController, UIScrollViewDelegate
                 
                 let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
                 slide1.webView.load(URLRequest(url: URL(string: "https://www.youtube.com/embed/KsJUbY0c324")!))
-                slide1.labelTitle.text = "A real-life bear"
-                slide1.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+                slide1.labelTitle.text = "Arm Lymphatic Drainage"
+                slide1.labelDesc.text = "Your lymphatic system helps eliminate your body’s waste. A healthy, active lymphatic system uses the natural movements of smooth muscle tissue to do this. If you’ve ever had a surgery on or involving your lymph nodes, your doctor may have suggested lymphatic drainage massage. Above is a video tutorial providing instruction on how to do manual lymphatic drainage in the arms."
                 
                 let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
                 slide2.webView.load(URLRequest(url: URL(string: "https://www.youtube.com/embed/87NdIiSnOjA")!))
-                slide2.labelTitle.text = "A real-life bear"
-                slide2.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+                slide2.labelTitle.text = "Leg Lymphatic Drainage"
+                slide2.labelDesc.text = "Your lymphatic system helps eliminate your body’s waste. A healthy, active lymphatic system uses the natural movements of smooth muscle tissue to do this. If you’ve ever had a surgery on or involving your lymph nodes, your doctor may have suggested lymphatic drainage massage. Above is a video tutorial providing instruction on how to do manual lymphatic drainage in the legs."
                 
         
                 
@@ -73,18 +82,25 @@ class MassageVideoTutorialViewController: UIViewController, UIScrollViewDelegate
              * slideScrollView.delegate = self or
              */
             func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+                // establish page control indexing
                 let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
                 pageControl.currentPage = Int(pageIndex)
                 
+                // horizontal
                 let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
                 let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
+                let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
+                
+                //stop scrolling in the vertical direction
+                    if scrollView.contentOffset.y != 0 {
+                        scrollView.contentOffset.y = 0
+                    }
                 
                 // vertical
-                let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
-                let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
-                
-                let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
-                let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
+                //let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
+                //let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
+                //let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
                 
                 
                 /*
@@ -94,16 +110,19 @@ class MassageVideoTutorialViewController: UIViewController, UIScrollViewDelegate
                 
             
                 /*
-                 * below code scales the imageview on paging the scrollview
+                 * below code scales the webView on paging the scrollview
                  */
+                /*
                 let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
                 
+            
                 if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
                     
                     slides[0].webView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
                     slides[1].webView.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
                     
                 }
+                */
             }
             
             
@@ -115,14 +134,14 @@ class MassageVideoTutorialViewController: UIViewController, UIScrollViewDelegate
                     //Change pageControl selected color to toRed: 103/255, toGreen: 58/255, toBlue: 183/255, fromAlpha: 0.2
                     //Change pageControl unselected color to toRed: 255/255, toGreen: 255/255, toBlue: 255/255, fromAlpha: 1
                     
-                    let pageUnselectedColor: UIColor = fade(fromRed: 255/255, fromGreen: 255/255, fromBlue: 255/255, fromAlpha: 1, toRed: 103/255, toGreen: 58/255, toBlue: 183/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
+                    let pageUnselectedColor: UIColor = fade(fromRed: 255/255, fromGreen: 255/255, fromBlue: 255/255, fromAlpha: 1, toRed: 255/255, toGreen: 255/255, toBlue: 255/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
                     pageControl.pageIndicatorTintColor = pageUnselectedColor
                 
                     
-                    let bgColor: UIColor = fade(fromRed: 103/255, fromGreen: 58/255, fromBlue: 183/255, fromAlpha: 1, toRed: 255/255, toGreen: 255/255, toBlue: 255/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
-                    slides[pageControl.currentPage].backgroundColor = bgColor
+                    //let bgColor: UIColor = fade(fromRed: 103/255, fromGreen: 58/255, fromBlue: 183/255, fromAlpha: 1, toRed: 255/255, toGreen: 255/255, toBlue: 255/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
+                    //slides[pageControl.currentPage].backgroundColor = bgColor
                     
-                    let pageSelectedColor: UIColor = fade(fromRed: 81/255, fromGreen: 36/255, fromBlue: 152/255, fromAlpha: 1, toRed: 103/255, toGreen: 58/255, toBlue: 183/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
+                    let pageSelectedColor: UIColor = fade(fromRed: 100/255, fromGreen: 0/255, fromBlue: 100/255, fromAlpha: 1, toRed: 100/255, toGreen: 0/255, toBlue: 100/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
                     pageControl.currentPageIndicatorTintColor = pageSelectedColor
                 }
             }
