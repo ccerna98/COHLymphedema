@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		25C0F0ACEFFF08ECAD72B3BF /* Pods_PatientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E61D6644D81CCB9E1A09A /* Pods_PatientApp.framework */; };
-		261C09A42443924800D19D23 /* MassageTutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C09A32443924800D19D23 /* MassageTutorialsViewController.swift */; };
 		265BF89A244A796D0039850D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265BF899244A796D0039850D /* Assets.xcassets */; };
 		265BF89C244A79CF0039850D /* CoHLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 265BF89B244A79CF0039850D /* CoHLogo.jpeg */; };
 		265BF89E244A79FD0039850D /* MassageVideoTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BF89D244A79FD0039850D /* MassageVideoTutorialViewController.swift */; };
@@ -94,7 +93,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		261C09A32443924800D19D23 /* MassageTutorialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageTutorialsViewController.swift; sourceTree = "<group>"; };
 		265BF899244A796D0039850D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PatientApp/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		265BF89B244A79CF0039850D /* CoHLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CoHLogo.jpeg; path = PatientApp/Resources/Assets.xcassets/CoHLogo.jpeg; sourceTree = "<group>"; };
 		265BF89D244A79FD0039850D /* MassageVideoTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageVideoTutorialViewController.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			children = (
 				267296B223A0BE4200AADAFC /* LymphedemaInfoViewController.swift */,
 				267296AB239DBB7100AADAFC /* LymphedemaTableViewController.swift */,
-				261C09A32443924800D19D23 /* MassageTutorialsViewController.swift */,
 				265BF89D244A79FD0039850D /* MassageVideoTutorialViewController.swift */,
 				265BF89F244A7B930039850D /* Slide.swift */,
 				265BF8A1244A7BAF0039850D /* Slide.xib */,
@@ -714,7 +711,6 @@
 				F8280CA9224ABA950067E2F7 /* PresetData.swift in Sources */,
 				F801AABD2260842F00D8EE52 /* User+CoreDataClass.swift in Sources */,
 				F801AACC22665AED00D8EE52 /* SessionStatsViewController.swift in Sources */,
-				261C09A42443924800D19D23 /* MassageTutorialsViewController.swift in Sources */,
 				F801AAC22263E2DA00D8EE52 /* UITextField+Extensions.swift in Sources */,
 				F8471B5522498B3800960B8C /* GoalsTableViewCell.swift in Sources */,
 				F850383E22388699009B79A0 /* ProgressTableViewCell.swift in Sources */,

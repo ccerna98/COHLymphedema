@@ -134,7 +134,7 @@ class MassageVideoTutorialViewController: UIViewController, UIScrollViewDelegate
                     //Change pageControl selected color to toRed: 103/255, toGreen: 58/255, toBlue: 183/255, fromAlpha: 0.2
                     //Change pageControl unselected color to toRed: 255/255, toGreen: 255/255, toBlue: 255/255, fromAlpha: 1
                     
-                    let pageUnselectedColor: UIColor = fade(fromRed: 255/255, fromGreen: 255/255, fromBlue: 255/255, fromAlpha: 1, toRed: 255/255, toGreen: 255/255, toBlue: 255/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
+                    let pageUnselectedColor: UIColor = fade(fromRed: 255/255, fromGreen: 255/255, fromBlue: 255/255, fromAlpha: 1, toRed: 200/255, toGreen: 200/255, toBlue: 200/255, toAlpha: 1, withPercentage: percentageHorizontalOffset * 3)
                     pageControl.pageIndicatorTintColor = pageUnselectedColor
                 
                     

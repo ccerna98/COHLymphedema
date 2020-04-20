@@ -26,14 +26,14 @@
                     </wkWebViewConfiguration>
                 </wkWebView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-0E-Rwy">
-                    <rect key="frame" x="25" y="450" width="364" height="31.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <rect key="frame" x="25" y="440" width="364" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" red="0.83575534326424872" green="0.43291211121906359" blue="0.63387389404954508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCK-cm-6K1">
-                    <rect key="frame" x="35" y="496.5" width="354" height="19.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <rect key="frame" x="35" y="479" width="354" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.65999433285803111" green="0.34186983347810795" blue="0.50056895381053768" alpha="0.80014854753521125" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -41,7 +41,8 @@
             <color key="backgroundColor" red="0.99675916495051209" green="0.94339068411392935" blue="1" alpha="0.593474911971831" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dUZ-y0-AX5" secondAttribute="trailing" constant="20" id="2uf-PD-Ob3"/>
-                <constraint firstItem="JY4-0E-Rwy" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="bottom" constant="35" id="Cmo-4F-Ni9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LCK-cm-6K1" secondAttribute="bottom" constant="40" id="42M-SD-7eC"/>
+                <constraint firstItem="JY4-0E-Rwy" firstAttribute="top" secondItem="dUZ-y0-AX5" secondAttribute="bottom" constant="25" id="Cmo-4F-Ni9"/>
                 <constraint firstItem="dUZ-y0-AX5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="125" id="Hcq-Kx-r4N"/>
                 <constraint firstItem="LCK-cm-6K1" firstAttribute="trailing" secondItem="JY4-0E-Rwy" secondAttribute="trailing" id="It8-dN-sgh"/>
                 <constraint firstItem="LCK-cm-6K1" firstAttribute="top" secondItem="JY4-0E-Rwy" secondAttribute="bottom" constant="15" id="Q5c-BN-mF8"/>

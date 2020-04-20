@@ -212,7 +212,7 @@ extension HomeViewController: ViewConstraintProtocol {
     internal func setupViews() {
         // update all of the views
         reloadUser()
-        headerView.updateHeader(text: "Hello, \(user.name)", color: colorTheme!, fsize: 30)
+        //headerView.updateHeader(text: "Hello, \(user.name)", color: colorTheme!, fsize: 30)
         BTView.updateBTStatus(connStat: false, deviceString: "N/A")
         
         // add the subviews to the main view
